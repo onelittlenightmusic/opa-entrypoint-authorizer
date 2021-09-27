@@ -43,7 +43,7 @@ const entrypointSetting = {
 
 ```
 
-Please check [examples](https://github.com/onelittlenightmusic/opa-entrypoint-authorizer)
+Please check [examples](https://github.com/onelittlenightmusic/opa-entrypoint-authorizer/tree/main/examples/rest-express)
 
 ### GraphQL with Apollo
 
@@ -81,5 +81,5 @@ const server = new ApolloServer({
 
 ```
 
-Please check [examples](https://github.com/onelittlenightmusic/opa-entrypoint-authorizer)
+Please check [examples](https://github.com/onelittlenightmusic/opa-entrypoint-authorizer/tree/main/examples/graphql-apollo)
 
