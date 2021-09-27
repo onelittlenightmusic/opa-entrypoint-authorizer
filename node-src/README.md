@@ -30,6 +30,9 @@ Before starting this authorizer, we need the following configurations.
 - `entrypointSetting`: Describe what permission is required for accessing each entrypoints
 
 ```js
+
+const { restExpressOPAAuthorizer } = require('opa-entrypoint-authorizer')
+
 // Setting for each entrypoint
 const entrypointSetting = {
   type: "REST",
@@ -41,15 +44,25 @@ const entrypointSetting = {
   ]
 }
 
+//Definition of REST API for Express
+app.get('/users', middleware, function (req, res) {
+  res.setHeader('Content-Type', 'application/json');
+  res.end( JSON.stringify(dataUsers.map((x)=>({name: x.name}))) );
+})
+
+// Run Express service with authorization middleware
+var server = app.listen(8081)
 ```
 
-Please check [examples](https://github.com/onelittlenightmusic/opa-entrypoint-authorizer)
+Please check [examples](https://github.com/onelittlenightmusic/opa-entrypoint-authorizer/tree/main/examples/rest-express)
 
 ### GraphQL with Apollo
 
 - `entrypointSetting`: Describe what permission is required for accessing each entrypoints
 
 ```js
+const { graphqlOPAAuthorizer } = require('opa-entrypoint-authorizer')
+
 // Setting for each entrypoint
 const entrypointSetting = {
   type: "GraphQL",
@@ -78,8 +91,7 @@ const server = new ApolloServer({
   schema: applyMiddleware(schema, graphqlOPAAuthorizer('policy.wasm', {permissions, entrypointSetting})),
   context: ({ req }) => ({ user: req.headers.authorization || '' }),
 })
-
 ```
 
-Please check [examples](https://github.com/onelittlenightmusic/opa-entrypoint-authorizer)
+Please check [examples](https://github.com/onelittlenightmusic/opa-entrypoint-authorizer/tree/main/examples/graphql-apollo)
 
