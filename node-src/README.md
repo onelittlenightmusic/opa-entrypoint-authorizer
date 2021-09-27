@@ -44,6 +44,10 @@ const entrypointSetting = {
   ]
 }
 
+// Configure authorization middleware
+const middleware = restExpressOPAAuthorizer('../../policy.wasm', {permissions, entrypointSetting})
+
+
 //Definition of REST API for Express
 app.get('/users', middleware, function (req, res) {
   res.setHeader('Content-Type', 'application/json');
