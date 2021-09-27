@@ -1,0 +1,25 @@
+{
+  "name": "graphql-opa-authorizer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node appGraphQL.js",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "@graphql-tools/schema": "^8.2.0",
+    "@open-policy-agent/opa-wasm": "^1.3.0",
+    "apollo-server": "^3.3.0",
+    "graphql": "^15.5.3",
+    "graphql-middleware": "^6.1.6",
+    "graphql-opa-authorizer": "../..",
+    "opa-entrypoint-authorizer": "file:../../node-src"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "mocha": "^9.1.2",
+    "supertest": "^6.1.6"
+  }
+}
