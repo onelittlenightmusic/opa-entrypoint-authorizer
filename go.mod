@@ -1,4 +1,4 @@
-module github.com/onelittlenightmusic/go-opa-entrypoint-authorizer
+module github.com/onelittlenightmusic/opa-entrypoint-authorizer
 
 go 1.16
 
