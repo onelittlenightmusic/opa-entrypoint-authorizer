@@ -131,11 +131,11 @@ Please check [examples](https://github.com/onelittlenightmusic/opa-entrypoint-au
 
 ### (Golang) REST with gorilla/mux
 
-TBD
+Please check [examples](https://github.com/onelittlenightmusic/opa-entrypoint-authorizer/tree/main/examples/rest-go-mux)
 
 ### (Golang) GraphQL with gqlgen
 
-TBD
+Please check [examples](https://github.com/onelittlenightmusic/opa-entrypoint-authorizer/tree/main/examples/graphql-go-gql)
 
 ## Policy
 
