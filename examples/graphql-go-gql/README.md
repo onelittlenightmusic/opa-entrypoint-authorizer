@@ -3,7 +3,7 @@
 Start a REST server.
 
 ```sh
-yarn start
+go run server.go
 ```
 
 Access the following URL sing REST client.
