@@ -1,6 +1,32 @@
 # opa-entrypoint-authorizer
 
-Single authorization configuration and middleware for both REST and GraphQL. Authorization policies are written by OPA Rego language and a new policy can be added.
+Plugin for Javascript or golang to enable single authorization configuration and middleware for both REST and GraphQL. 
+
+Authorization policies are written by OPA Rego language and a new policy can be added.
+
+## Supported framework
+
+- JavaScript (node.js)
+  - GraphQL: Apollo, Envelop (To be)
+  - REST: Express
+- Golang
+  - GraphQL: gqlgen
+  - REST: `http` and gorilla/mux
+
+## Usage
+
+- Create configuration as `permissions.json` (details in the next section)
+- Import plugin
+  ```js
+  const { restExpressOPAAuthorizer } = require('opa-entrypoint-authorizer')
+  ```
+- Create middleware using plugin and configuration. Insert the middleware to frameworks.
+  ```js
+  const middleware = restExpressOPAAuthorizer('policy.wasm', {permissions, entrypointSetting})
+
+  //Definition of REST API for Express
+  app.get('/users', middleware, function (req, res) {...}
+  ```
 
 ## Configuration
 
@@ -25,7 +51,7 @@ Before starting this authorizer, we need the following configurations.
 
 ## Examples
 
-### REST with Express
+### (JavaScript) REST with Express
 
 - `entrypointSetting`: Describe what permission is required for accessing each entrypoints
 
@@ -60,7 +86,7 @@ var server = app.listen(8081)
 
 Please check [examples](https://github.com/onelittlenightmusic/opa-entrypoint-authorizer/tree/main/examples/rest-express)
 
-### GraphQL with Apollo
+### (JavaScript) GraphQL with Apollo
 
 - `entrypointSetting`: Describe what permission is required for accessing each entrypoints
 
@@ -99,3 +125,30 @@ const server = new ApolloServer({
 
 Please check [examples](https://github.com/onelittlenightmusic/opa-entrypoint-authorizer/tree/main/examples/graphql-apollo)
 
+### (Golang) REST with gorilla/mux
+
+TBD
+
+### (Golang) GraphQL with gqlgen
+
+TBD
+
+## Policy
+
+### Policy for JavaScript
+
+JavaScript requires policy wasm file `policy.wasm` (file name is arbitrary).
+
+### Policy for Golang
+
+Golang requires a policy bundle file `bundle.tar.gz`.
+
+### Customize policy
+
+TBD
+
+### Build policy files
+
+```sh
+make build
+```

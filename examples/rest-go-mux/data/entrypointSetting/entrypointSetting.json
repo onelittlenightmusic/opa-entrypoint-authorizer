@@ -1,0 +1,9 @@
+{
+  "type": "REST",
+  "restEntrypoints": [
+    { "path": "/users", "method": "GET", "require": {"resource": "user", "verb": "list"}},
+    { "pathPattern": "/users/{user_name}", "method": "GET", "require": {"resource": "user", "verb": "getname", "whoOwnsInArgs": "user_name"}},
+    { "pathRegex": "^/+users/([^/]+)/age", "method": "GET", "require": {"resource": "user", "verb": "getage", "whoOwnsInArgs": "user_name"}},
+    { "path": "/offices", "method": "GET", "require": {"resource": "office", "verb": "list"}}
+  ]
+}

@@ -1,0 +1,1384 @@
+AroundOperations: AroundFields: {
+    "Parent": {
+        "Parent": null,
+        "Object": "Query",
+        "Args": null,
+        "Field": {
+            "Selections": null
+        },
+        "Index": null,
+        "Result": null,
+        "IsMethod": false,
+        "IsResolver": false
+    },
+    "Object": "Query",
+    "Args": null,
+    "Field": {
+        "Alias": "offices",
+        "Name": "offices",
+        "Arguments": null,
+        "Directives": null,
+        "SelectionSet": [
+            {
+                "Alias": "name",
+                "Name": "name",
+                "Arguments": null,
+                "Directives": null,
+                "SelectionSet": null,
+                "Position": {
+                    "Start": 26,
+                    "End": 30,
+                    "Line": 3,
+                    "Column": 5,
+                    "Src": {
+                        "Name": "",
+                        "Input": "query a {\n  offices {\n    name\n  }\n}",
+                        "BuiltIn": false
+                    }
+                },
+                "Definition": {
+                    "Description": "",
+                    "Name": "name",
+                    "Arguments": null,
+                    "DefaultValue": null,
+                    "Type": {
+                        "NamedType": "String",
+                        "Elem": null,
+                        "NonNull": true,
+                        "Position": {
+                            "Start": 223,
+                            "End": 228,
+                            "Line": 18,
+                            "Column": 3,
+                            "Src": {
+                                "Name": "graph/schema.graphqls",
+                                "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                "BuiltIn": false
+                            }
+                        }
+                    },
+                    "Directives": null,
+                    "Position": {
+                        "Start": 207,
+                        "End": 211,
+                        "Line": 17,
+                        "Column": 3,
+                        "Src": {
+                            "Name": "graph/schema.graphqls",
+                            "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                            "BuiltIn": false
+                        }
+                    }
+                },
+                "ObjectDefinition": {
+                    "Kind": "OBJECT",
+                    "Description": "",
+                    "Name": "Office",
+                    "Directives": null,
+                    "Interfaces": null,
+                    "Fields": [
+                        {
+                            "Description": "",
+                            "Name": "name",
+                            "Arguments": null,
+                            "DefaultValue": null,
+                            "Type": {
+                                "NamedType": "String",
+                                "Elem": null,
+                                "NonNull": true,
+                                "Position": {
+                                    "Start": 223,
+                                    "End": 228,
+                                    "Line": 18,
+                                    "Column": 3,
+                                    "Src": {
+                                        "Name": "graph/schema.graphqls",
+                                        "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                        "BuiltIn": false
+                                    }
+                                }
+                            },
+                            "Directives": null,
+                            "Position": {
+                                "Start": 207,
+                                "End": 211,
+                                "Line": 17,
+                                "Column": 3,
+                                "Src": {
+                                    "Name": "graph/schema.graphqls",
+                                    "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                    "BuiltIn": false
+                                }
+                            }
+                        },
+                        {
+                            "Description": "",
+                            "Name": "floor",
+                            "Arguments": null,
+                            "DefaultValue": null,
+                            "Type": {
+                                "NamedType": "Int",
+                                "Elem": null,
+                                "NonNull": true,
+                                "Position": {
+                                    "Start": 235,
+                                    "End": 236,
+                                    "Line": 19,
+                                    "Column": 1,
+                                    "Src": {
+                                        "Name": "graph/schema.graphqls",
+                                        "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                        "BuiltIn": false
+                                    }
+                                }
+                            },
+                            "Directives": null,
+                            "Position": {
+                                "Start": 223,
+                                "End": 228,
+                                "Line": 18,
+                                "Column": 3,
+                                "Src": {
+                                    "Name": "graph/schema.graphqls",
+                                    "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                    "BuiltIn": false
+                                }
+                            }
+                        }
+                    ],
+                    "Types": null,
+                    "EnumValues": null,
+                    "Position": {
+                        "Start": 196,
+                        "End": 202,
+                        "Line": 16,
+                        "Column": 6,
+                        "Src": {
+                            "Name": "graph/schema.graphqls",
+                            "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                            "BuiltIn": false
+                        }
+                    },
+                    "BuiltIn": false
+                }
+            }
+        ],
+        "Position": {
+            "Start": 12,
+            "End": 19,
+            "Line": 2,
+            "Column": 3,
+            "Src": {
+                "Name": "",
+                "Input": "query a {\n  offices {\n    name\n  }\n}",
+                "BuiltIn": false
+            }
+        },
+        "Definition": {
+            "Description": "",
+            "Name": "offices",
+            "Arguments": null,
+            "DefaultValue": null,
+            "Type": {
+                "NamedType": "",
+                "Elem": {
+                    "NamedType": "Office",
+                    "Elem": null,
+                    "NonNull": false,
+                    "Position": {
+                        "Start": 180,
+                        "End": 186,
+                        "Line": 13,
+                        "Column": 13,
+                        "Src": {
+                            "Name": "graph/schema.graphqls",
+                            "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                            "BuiltIn": false
+                        }
+                    }
+                },
+                "NonNull": false,
+                "Position": {
+                    "Start": 180,
+                    "End": 186,
+                    "Line": 13,
+                    "Column": 13,
+                    "Src": {
+                        "Name": "graph/schema.graphqls",
+                        "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                        "BuiltIn": false
+                    }
+                }
+            },
+            "Directives": null,
+            "Position": {
+                "Start": 170,
+                "End": 177,
+                "Line": 13,
+                "Column": 3,
+                "Src": {
+                    "Name": "graph/schema.graphqls",
+                    "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                    "BuiltIn": false
+                }
+            }
+        },
+        "ObjectDefinition": {
+            "Kind": "OBJECT",
+            "Description": "",
+            "Name": "Query",
+            "Directives": null,
+            "Interfaces": null,
+            "Fields": [
+                {
+                    "Description": "",
+                    "Name": "users",
+                    "Arguments": null,
+                    "DefaultValue": null,
+                    "Type": {
+                        "NamedType": "",
+                        "Elem": {
+                            "NamedType": "User",
+                            "Elem": null,
+                            "NonNull": true,
+                            "Position": {
+                                "Start": 137,
+                                "End": 138,
+                                "Line": 11,
+                                "Column": 16,
+                                "Src": {
+                                    "Name": "graph/schema.graphqls",
+                                    "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                    "BuiltIn": false
+                                }
+                            }
+                        },
+                        "NonNull": true,
+                        "Position": {
+                            "Start": 142,
+                            "End": 146,
+                            "Line": 12,
+                            "Column": 3,
+                            "Src": {
+                                "Name": "graph/schema.graphqls",
+                                "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                "BuiltIn": false
+                            }
+                        }
+                    },
+                    "Directives": null,
+                    "Position": {
+                        "Start": 124,
+                        "End": 129,
+                        "Line": 11,
+                        "Column": 3,
+                        "Src": {
+                            "Name": "graph/schema.graphqls",
+                            "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                            "BuiltIn": false
+                        }
+                    }
+                },
+                {
+                    "Description": "",
+                    "Name": "user",
+                    "Arguments": [
+                        {
+                            "Description": "",
+                            "Name": "name",
+                            "DefaultValue": null,
+                            "Type": {
+                                "NamedType": "String",
+                                "Elem": null,
+                                "NonNull": true,
+                                "Position": {
+                                    "Start": 160,
+                                    "End": 161,
+                                    "Line": 12,
+                                    "Column": 21,
+                                    "Src": {
+                                        "Name": "graph/schema.graphqls",
+                                        "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                        "BuiltIn": false
+                                    }
+                                }
+                            },
+                            "Directives": null,
+                            "Position": {
+                                "Start": 147,
+                                "End": 151,
+                                "Line": 12,
+                                "Column": 8,
+                                "Src": {
+                                    "Name": "graph/schema.graphqls",
+                                    "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                    "BuiltIn": false
+                                }
+                            }
+                        }
+                    ],
+                    "DefaultValue": null,
+                    "Type": {
+                        "NamedType": "User",
+                        "Elem": null,
+                        "NonNull": false,
+                        "Position": {
+                            "Start": 163,
+                            "End": 167,
+                            "Line": 12,
+                            "Column": 24,
+                            "Src": {
+                                "Name": "graph/schema.graphqls",
+                                "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                "BuiltIn": false
+                            }
+                        }
+                    },
+                    "Directives": null,
+                    "Position": {
+                        "Start": 142,
+                        "End": 146,
+                        "Line": 12,
+                        "Column": 3,
+                        "Src": {
+                            "Name": "graph/schema.graphqls",
+                            "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                            "BuiltIn": false
+                        }
+                    }
+                },
+                {
+                    "Description": "",
+                    "Name": "offices",
+                    "Arguments": null,
+                    "DefaultValue": null,
+                    "Type": {
+                        "NamedType": "",
+                        "Elem": {
+                            "NamedType": "Office",
+                            "Elem": null,
+                            "NonNull": false,
+                            "Position": {
+                                "Start": 180,
+                                "End": 186,
+                                "Line": 13,
+                                "Column": 13,
+                                "Src": {
+                                    "Name": "graph/schema.graphqls",
+                                    "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                    "BuiltIn": false
+                                }
+                            }
+                        },
+                        "NonNull": false,
+                        "Position": {
+                            "Start": 180,
+                            "End": 186,
+                            "Line": 13,
+                            "Column": 13,
+                            "Src": {
+                                "Name": "graph/schema.graphqls",
+                                "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                "BuiltIn": false
+                            }
+                        }
+                    },
+                    "Directives": null,
+                    "Position": {
+                        "Start": 170,
+                        "End": 177,
+                        "Line": 13,
+                        "Column": 3,
+                        "Src": {
+                            "Name": "graph/schema.graphqls",
+                            "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                            "BuiltIn": false
+                        }
+                    }
+                },
+                {
+                    "Description": "",
+                    "Name": "__schema",
+                    "Arguments": null,
+                    "DefaultValue": null,
+                    "Type": {
+                        "NamedType": "__Schema",
+                        "Elem": null,
+                        "NonNull": true,
+                        "Position": null
+                    },
+                    "Directives": null,
+                    "Position": null
+                },
+                {
+                    "Description": "",
+                    "Name": "__type",
+                    "Arguments": [
+                        {
+                            "Description": "",
+                            "Name": "name",
+                            "DefaultValue": null,
+                            "Type": {
+                                "NamedType": "String",
+                                "Elem": null,
+                                "NonNull": true,
+                                "Position": null
+                            },
+                            "Directives": null,
+                            "Position": null
+                        }
+                    ],
+                    "DefaultValue": null,
+                    "Type": {
+                        "NamedType": "__Type",
+                        "Elem": null,
+                        "NonNull": false,
+                        "Position": null
+                    },
+                    "Directives": null,
+                    "Position": null
+                }
+            ],
+            "Types": null,
+            "EnumValues": null,
+            "Position": {
+                "Start": 114,
+                "End": 119,
+                "Line": 10,
+                "Column": 6,
+                "Src": {
+                    "Name": "graph/schema.graphqls",
+                    "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                    "BuiltIn": false
+                }
+            },
+            "BuiltIn": false
+        },
+        "Selections": [
+            {
+                "Alias": "name",
+                "Name": "name",
+                "Arguments": null,
+                "Directives": null,
+                "SelectionSet": null,
+                "Position": {
+                    "Start": 26,
+                    "End": 30,
+                    "Line": 3,
+                    "Column": 5,
+                    "Src": {
+                        "Name": "",
+                        "Input": "query a {\n  offices {\n    name\n  }\n}",
+                        "BuiltIn": false
+                    }
+                },
+                "Definition": {
+                    "Description": "",
+                    "Name": "name",
+                    "Arguments": null,
+                    "DefaultValue": null,
+                    "Type": {
+                        "NamedType": "String",
+                        "Elem": null,
+                        "NonNull": true,
+                        "Position": {
+                            "Start": 223,
+                            "End": 228,
+                            "Line": 18,
+                            "Column": 3,
+                            "Src": {
+                                "Name": "graph/schema.graphqls",
+                                "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                "BuiltIn": false
+                            }
+                        }
+                    },
+                    "Directives": null,
+                    "Position": {
+                        "Start": 207,
+                        "End": 211,
+                        "Line": 17,
+                        "Column": 3,
+                        "Src": {
+                            "Name": "graph/schema.graphqls",
+                            "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                            "BuiltIn": false
+                        }
+                    }
+                },
+                "ObjectDefinition": {
+                    "Kind": "OBJECT",
+                    "Description": "",
+                    "Name": "Office",
+                    "Directives": null,
+                    "Interfaces": null,
+                    "Fields": [
+                        {
+                            "Description": "",
+                            "Name": "name",
+                            "Arguments": null,
+                            "DefaultValue": null,
+                            "Type": {
+                                "NamedType": "String",
+                                "Elem": null,
+                                "NonNull": true,
+                                "Position": {
+                                    "Start": 223,
+                                    "End": 228,
+                                    "Line": 18,
+                                    "Column": 3,
+                                    "Src": {
+                                        "Name": "graph/schema.graphqls",
+                                        "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                        "BuiltIn": false
+                                    }
+                                }
+                            },
+                            "Directives": null,
+                            "Position": {
+                                "Start": 207,
+                                "End": 211,
+                                "Line": 17,
+                                "Column": 3,
+                                "Src": {
+                                    "Name": "graph/schema.graphqls",
+                                    "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                    "BuiltIn": false
+                                }
+                            }
+                        },
+                        {
+                            "Description": "",
+                            "Name": "floor",
+                            "Arguments": null,
+                            "DefaultValue": null,
+                            "Type": {
+                                "NamedType": "Int",
+                                "Elem": null,
+                                "NonNull": true,
+                                "Position": {
+                                    "Start": 235,
+                                    "End": 236,
+                                    "Line": 19,
+                                    "Column": 1,
+                                    "Src": {
+                                        "Name": "graph/schema.graphqls",
+                                        "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                        "BuiltIn": false
+                                    }
+                                }
+                            },
+                            "Directives": null,
+                            "Position": {
+                                "Start": 223,
+                                "End": 228,
+                                "Line": 18,
+                                "Column": 3,
+                                "Src": {
+                                    "Name": "graph/schema.graphqls",
+                                    "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                    "BuiltIn": false
+                                }
+                            }
+                        }
+                    ],
+                    "Types": null,
+                    "EnumValues": null,
+                    "Position": {
+                        "Start": 196,
+                        "End": 202,
+                        "Line": 16,
+                        "Column": 6,
+                        "Src": {
+                            "Name": "graph/schema.graphqls",
+                            "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                            "BuiltIn": false
+                        }
+                    },
+                    "BuiltIn": false
+                }
+            }
+        ]
+    },
+    "Index": null,
+    "Result": null,
+    "IsMethod": true,
+    "IsResolver": true
+}AroundFields: {
+    "Parent": {
+        "Parent": {
+            "Parent": {
+                "Parent": null,
+                "Object": "Query",
+                "Args": null,
+                "Field": {
+                    "Selections": null
+                },
+                "Index": null,
+                "Result": null,
+                "IsMethod": false,
+                "IsResolver": false
+            },
+            "Object": "Query",
+            "Args": null,
+            "Field": {
+                "Alias": "offices",
+                "Name": "offices",
+                "Arguments": null,
+                "Directives": null,
+                "SelectionSet": [
+                    {
+                        "Alias": "name",
+                        "Name": "name",
+                        "Arguments": null,
+                        "Directives": null,
+                        "SelectionSet": null,
+                        "Position": {
+                            "Start": 26,
+                            "End": 30,
+                            "Line": 3,
+                            "Column": 5,
+                            "Src": {
+                                "Name": "",
+                                "Input": "query a {\n  offices {\n    name\n  }\n}",
+                                "BuiltIn": false
+                            }
+                        },
+                        "Definition": {
+                            "Description": "",
+                            "Name": "name",
+                            "Arguments": null,
+                            "DefaultValue": null,
+                            "Type": {
+                                "NamedType": "String",
+                                "Elem": null,
+                                "NonNull": true,
+                                "Position": {
+                                    "Start": 223,
+                                    "End": 228,
+                                    "Line": 18,
+                                    "Column": 3,
+                                    "Src": {
+                                        "Name": "graph/schema.graphqls",
+                                        "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                        "BuiltIn": false
+                                    }
+                                }
+                            },
+                            "Directives": null,
+                            "Position": {
+                                "Start": 207,
+                                "End": 211,
+                                "Line": 17,
+                                "Column": 3,
+                                "Src": {
+                                    "Name": "graph/schema.graphqls",
+                                    "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                    "BuiltIn": false
+                                }
+                            }
+                        },
+                        "ObjectDefinition": {
+                            "Kind": "OBJECT",
+                            "Description": "",
+                            "Name": "Office",
+                            "Directives": null,
+                            "Interfaces": null,
+                            "Fields": [
+                                {
+                                    "Description": "",
+                                    "Name": "name",
+                                    "Arguments": null,
+                                    "DefaultValue": null,
+                                    "Type": {
+                                        "NamedType": "String",
+                                        "Elem": null,
+                                        "NonNull": true,
+                                        "Position": {
+                                            "Start": 223,
+                                            "End": 228,
+                                            "Line": 18,
+                                            "Column": 3,
+                                            "Src": {
+                                                "Name": "graph/schema.graphqls",
+                                                "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                                "BuiltIn": false
+                                            }
+                                        }
+                                    },
+                                    "Directives": null,
+                                    "Position": {
+                                        "Start": 207,
+                                        "End": 211,
+                                        "Line": 17,
+                                        "Column": 3,
+                                        "Src": {
+                                            "Name": "graph/schema.graphqls",
+                                            "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                            "BuiltIn": false
+                                        }
+                                    }
+                                },
+                                {
+                                    "Description": "",
+                                    "Name": "floor",
+                                    "Arguments": null,
+                                    "DefaultValue": null,
+                                    "Type": {
+                                        "NamedType": "Int",
+                                        "Elem": null,
+                                        "NonNull": true,
+                                        "Position": {
+                                            "Start": 235,
+                                            "End": 236,
+                                            "Line": 19,
+                                            "Column": 1,
+                                            "Src": {
+                                                "Name": "graph/schema.graphqls",
+                                                "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                                "BuiltIn": false
+                                            }
+                                        }
+                                    },
+                                    "Directives": null,
+                                    "Position": {
+                                        "Start": 223,
+                                        "End": 228,
+                                        "Line": 18,
+                                        "Column": 3,
+                                        "Src": {
+                                            "Name": "graph/schema.graphqls",
+                                            "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                            "BuiltIn": false
+                                        }
+                                    }
+                                }
+                            ],
+                            "Types": null,
+                            "EnumValues": null,
+                            "Position": {
+                                "Start": 196,
+                                "End": 202,
+                                "Line": 16,
+                                "Column": 6,
+                                "Src": {
+                                    "Name": "graph/schema.graphqls",
+                                    "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                    "BuiltIn": false
+                                }
+                            },
+                            "BuiltIn": false
+                        }
+                    }
+                ],
+                "Position": {
+                    "Start": 12,
+                    "End": 19,
+                    "Line": 2,
+                    "Column": 3,
+                    "Src": {
+                        "Name": "",
+                        "Input": "query a {\n  offices {\n    name\n  }\n}",
+                        "BuiltIn": false
+                    }
+                },
+                "Definition": {
+                    "Description": "",
+                    "Name": "offices",
+                    "Arguments": null,
+                    "DefaultValue": null,
+                    "Type": {
+                        "NamedType": "",
+                        "Elem": {
+                            "NamedType": "Office",
+                            "Elem": null,
+                            "NonNull": false,
+                            "Position": {
+                                "Start": 180,
+                                "End": 186,
+                                "Line": 13,
+                                "Column": 13,
+                                "Src": {
+                                    "Name": "graph/schema.graphqls",
+                                    "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                    "BuiltIn": false
+                                }
+                            }
+                        },
+                        "NonNull": false,
+                        "Position": {
+                            "Start": 180,
+                            "End": 186,
+                            "Line": 13,
+                            "Column": 13,
+                            "Src": {
+                                "Name": "graph/schema.graphqls",
+                                "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                "BuiltIn": false
+                            }
+                        }
+                    },
+                    "Directives": null,
+                    "Position": {
+                        "Start": 170,
+                        "End": 177,
+                        "Line": 13,
+                        "Column": 3,
+                        "Src": {
+                            "Name": "graph/schema.graphqls",
+                            "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                            "BuiltIn": false
+                        }
+                    }
+                },
+                "ObjectDefinition": {
+                    "Kind": "OBJECT",
+                    "Description": "",
+                    "Name": "Query",
+                    "Directives": null,
+                    "Interfaces": null,
+                    "Fields": [
+                        {
+                            "Description": "",
+                            "Name": "users",
+                            "Arguments": null,
+                            "DefaultValue": null,
+                            "Type": {
+                                "NamedType": "",
+                                "Elem": {
+                                    "NamedType": "User",
+                                    "Elem": null,
+                                    "NonNull": true,
+                                    "Position": {
+                                        "Start": 137,
+                                        "End": 138,
+                                        "Line": 11,
+                                        "Column": 16,
+                                        "Src": {
+                                            "Name": "graph/schema.graphqls",
+                                            "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                            "BuiltIn": false
+                                        }
+                                    }
+                                },
+                                "NonNull": true,
+                                "Position": {
+                                    "Start": 142,
+                                    "End": 146,
+                                    "Line": 12,
+                                    "Column": 3,
+                                    "Src": {
+                                        "Name": "graph/schema.graphqls",
+                                        "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                        "BuiltIn": false
+                                    }
+                                }
+                            },
+                            "Directives": null,
+                            "Position": {
+                                "Start": 124,
+                                "End": 129,
+                                "Line": 11,
+                                "Column": 3,
+                                "Src": {
+                                    "Name": "graph/schema.graphqls",
+                                    "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                    "BuiltIn": false
+                                }
+                            }
+                        },
+                        {
+                            "Description": "",
+                            "Name": "user",
+                            "Arguments": [
+                                {
+                                    "Description": "",
+                                    "Name": "name",
+                                    "DefaultValue": null,
+                                    "Type": {
+                                        "NamedType": "String",
+                                        "Elem": null,
+                                        "NonNull": true,
+                                        "Position": {
+                                            "Start": 160,
+                                            "End": 161,
+                                            "Line": 12,
+                                            "Column": 21,
+                                            "Src": {
+                                                "Name": "graph/schema.graphqls",
+                                                "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                                "BuiltIn": false
+                                            }
+                                        }
+                                    },
+                                    "Directives": null,
+                                    "Position": {
+                                        "Start": 147,
+                                        "End": 151,
+                                        "Line": 12,
+                                        "Column": 8,
+                                        "Src": {
+                                            "Name": "graph/schema.graphqls",
+                                            "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                            "BuiltIn": false
+                                        }
+                                    }
+                                }
+                            ],
+                            "DefaultValue": null,
+                            "Type": {
+                                "NamedType": "User",
+                                "Elem": null,
+                                "NonNull": false,
+                                "Position": {
+                                    "Start": 163,
+                                    "End": 167,
+                                    "Line": 12,
+                                    "Column": 24,
+                                    "Src": {
+                                        "Name": "graph/schema.graphqls",
+                                        "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                        "BuiltIn": false
+                                    }
+                                }
+                            },
+                            "Directives": null,
+                            "Position": {
+                                "Start": 142,
+                                "End": 146,
+                                "Line": 12,
+                                "Column": 3,
+                                "Src": {
+                                    "Name": "graph/schema.graphqls",
+                                    "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                    "BuiltIn": false
+                                }
+                            }
+                        },
+                        {
+                            "Description": "",
+                            "Name": "offices",
+                            "Arguments": null,
+                            "DefaultValue": null,
+                            "Type": {
+                                "NamedType": "",
+                                "Elem": {
+                                    "NamedType": "Office",
+                                    "Elem": null,
+                                    "NonNull": false,
+                                    "Position": {
+                                        "Start": 180,
+                                        "End": 186,
+                                        "Line": 13,
+                                        "Column": 13,
+                                        "Src": {
+                                            "Name": "graph/schema.graphqls",
+                                            "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                            "BuiltIn": false
+                                        }
+                                    }
+                                },
+                                "NonNull": false,
+                                "Position": {
+                                    "Start": 180,
+                                    "End": 186,
+                                    "Line": 13,
+                                    "Column": 13,
+                                    "Src": {
+                                        "Name": "graph/schema.graphqls",
+                                        "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                        "BuiltIn": false
+                                    }
+                                }
+                            },
+                            "Directives": null,
+                            "Position": {
+                                "Start": 170,
+                                "End": 177,
+                                "Line": 13,
+                                "Column": 3,
+                                "Src": {
+                                    "Name": "graph/schema.graphqls",
+                                    "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                    "BuiltIn": false
+                                }
+                            }
+                        },
+                        {
+                            "Description": "",
+                            "Name": "__schema",
+                            "Arguments": null,
+                            "DefaultValue": null,
+                            "Type": {
+                                "NamedType": "__Schema",
+                                "Elem": null,
+                                "NonNull": true,
+                                "Position": null
+                            },
+                            "Directives": null,
+                            "Position": null
+                        },
+                        {
+                            "Description": "",
+                            "Name": "__type",
+                            "Arguments": [
+                                {
+                                    "Description": "",
+                                    "Name": "name",
+                                    "DefaultValue": null,
+                                    "Type": {
+                                        "NamedType": "String",
+                                        "Elem": null,
+                                        "NonNull": true,
+                                        "Position": null
+                                    },
+                                    "Directives": null,
+                                    "Position": null
+                                }
+                            ],
+                            "DefaultValue": null,
+                            "Type": {
+                                "NamedType": "__Type",
+                                "Elem": null,
+                                "NonNull": false,
+                                "Position": null
+                            },
+                            "Directives": null,
+                            "Position": null
+                        }
+                    ],
+                    "Types": null,
+                    "EnumValues": null,
+                    "Position": {
+                        "Start": 114,
+                        "End": 119,
+                        "Line": 10,
+                        "Column": 6,
+                        "Src": {
+                            "Name": "graph/schema.graphqls",
+                            "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                            "BuiltIn": false
+                        }
+                    },
+                    "BuiltIn": false
+                },
+                "Selections": [
+                    {
+                        "Alias": "name",
+                        "Name": "name",
+                        "Arguments": null,
+                        "Directives": null,
+                        "SelectionSet": null,
+                        "Position": {
+                            "Start": 26,
+                            "End": 30,
+                            "Line": 3,
+                            "Column": 5,
+                            "Src": {
+                                "Name": "",
+                                "Input": "query a {\n  offices {\n    name\n  }\n}",
+                                "BuiltIn": false
+                            }
+                        },
+                        "Definition": {
+                            "Description": "",
+                            "Name": "name",
+                            "Arguments": null,
+                            "DefaultValue": null,
+                            "Type": {
+                                "NamedType": "String",
+                                "Elem": null,
+                                "NonNull": true,
+                                "Position": {
+                                    "Start": 223,
+                                    "End": 228,
+                                    "Line": 18,
+                                    "Column": 3,
+                                    "Src": {
+                                        "Name": "graph/schema.graphqls",
+                                        "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                        "BuiltIn": false
+                                    }
+                                }
+                            },
+                            "Directives": null,
+                            "Position": {
+                                "Start": 207,
+                                "End": 211,
+                                "Line": 17,
+                                "Column": 3,
+                                "Src": {
+                                    "Name": "graph/schema.graphqls",
+                                    "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                    "BuiltIn": false
+                                }
+                            }
+                        },
+                        "ObjectDefinition": {
+                            "Kind": "OBJECT",
+                            "Description": "",
+                            "Name": "Office",
+                            "Directives": null,
+                            "Interfaces": null,
+                            "Fields": [
+                                {
+                                    "Description": "",
+                                    "Name": "name",
+                                    "Arguments": null,
+                                    "DefaultValue": null,
+                                    "Type": {
+                                        "NamedType": "String",
+                                        "Elem": null,
+                                        "NonNull": true,
+                                        "Position": {
+                                            "Start": 223,
+                                            "End": 228,
+                                            "Line": 18,
+                                            "Column": 3,
+                                            "Src": {
+                                                "Name": "graph/schema.graphqls",
+                                                "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                                "BuiltIn": false
+                                            }
+                                        }
+                                    },
+                                    "Directives": null,
+                                    "Position": {
+                                        "Start": 207,
+                                        "End": 211,
+                                        "Line": 17,
+                                        "Column": 3,
+                                        "Src": {
+                                            "Name": "graph/schema.graphqls",
+                                            "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                            "BuiltIn": false
+                                        }
+                                    }
+                                },
+                                {
+                                    "Description": "",
+                                    "Name": "floor",
+                                    "Arguments": null,
+                                    "DefaultValue": null,
+                                    "Type": {
+                                        "NamedType": "Int",
+                                        "Elem": null,
+                                        "NonNull": true,
+                                        "Position": {
+                                            "Start": 235,
+                                            "End": 236,
+                                            "Line": 19,
+                                            "Column": 1,
+                                            "Src": {
+                                                "Name": "graph/schema.graphqls",
+                                                "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                                "BuiltIn": false
+                                            }
+                                        }
+                                    },
+                                    "Directives": null,
+                                    "Position": {
+                                        "Start": 223,
+                                        "End": 228,
+                                        "Line": 18,
+                                        "Column": 3,
+                                        "Src": {
+                                            "Name": "graph/schema.graphqls",
+                                            "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                            "BuiltIn": false
+                                        }
+                                    }
+                                }
+                            ],
+                            "Types": null,
+                            "EnumValues": null,
+                            "Position": {
+                                "Start": 196,
+                                "End": 202,
+                                "Line": 16,
+                                "Column": 6,
+                                "Src": {
+                                    "Name": "graph/schema.graphqls",
+                                    "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                    "BuiltIn": false
+                                }
+                            },
+                            "BuiltIn": false
+                        }
+                    }
+                ]
+            },
+            "Index": null,
+            "Result": [
+                {
+                    "name": "santa clara",
+                    "floor": 5
+                }
+            ],
+            "IsMethod": true,
+            "IsResolver": true
+        },
+        "Object": "",
+        "Args": null,
+        "Field": {
+            "Selections": null
+        },
+        "Index": 0,
+        "Result": {
+            "name": "santa clara",
+            "floor": 5
+        },
+        "IsMethod": false,
+        "IsResolver": false
+    },
+    "Object": "Office",
+    "Args": null,
+    "Field": {
+        "Alias": "name",
+        "Name": "name",
+        "Arguments": null,
+        "Directives": null,
+        "SelectionSet": null,
+        "Position": {
+            "Start": 26,
+            "End": 30,
+            "Line": 3,
+            "Column": 5,
+            "Src": {
+                "Name": "",
+                "Input": "query a {\n  offices {\n    name\n  }\n}",
+                "BuiltIn": false
+            }
+        },
+        "Definition": {
+            "Description": "",
+            "Name": "name",
+            "Arguments": null,
+            "DefaultValue": null,
+            "Type": {
+                "NamedType": "String",
+                "Elem": null,
+                "NonNull": true,
+                "Position": {
+                    "Start": 223,
+                    "End": 228,
+                    "Line": 18,
+                    "Column": 3,
+                    "Src": {
+                        "Name": "graph/schema.graphqls",
+                        "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                        "BuiltIn": false
+                    }
+                }
+            },
+            "Directives": null,
+            "Position": {
+                "Start": 207,
+                "End": 211,
+                "Line": 17,
+                "Column": 3,
+                "Src": {
+                    "Name": "graph/schema.graphqls",
+                    "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                    "BuiltIn": false
+                }
+            }
+        },
+        "ObjectDefinition": {
+            "Kind": "OBJECT",
+            "Description": "",
+            "Name": "Office",
+            "Directives": null,
+            "Interfaces": null,
+            "Fields": [
+                {
+                    "Description": "",
+                    "Name": "name",
+                    "Arguments": null,
+                    "DefaultValue": null,
+                    "Type": {
+                        "NamedType": "String",
+                        "Elem": null,
+                        "NonNull": true,
+                        "Position": {
+                            "Start": 223,
+                            "End": 228,
+                            "Line": 18,
+                            "Column": 3,
+                            "Src": {
+                                "Name": "graph/schema.graphqls",
+                                "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                "BuiltIn": false
+                            }
+                        }
+                    },
+                    "Directives": null,
+                    "Position": {
+                        "Start": 207,
+                        "End": 211,
+                        "Line": 17,
+                        "Column": 3,
+                        "Src": {
+                            "Name": "graph/schema.graphqls",
+                            "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                            "BuiltIn": false
+                        }
+                    }
+                },
+                {
+                    "Description": "",
+                    "Name": "floor",
+                    "Arguments": null,
+                    "DefaultValue": null,
+                    "Type": {
+                        "NamedType": "Int",
+                        "Elem": null,
+                        "NonNull": true,
+                        "Position": {
+                            "Start": 235,
+                            "End": 236,
+                            "Line": 19,
+                            "Column": 1,
+                            "Src": {
+                                "Name": "graph/schema.graphqls",
+                                "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                                "BuiltIn": false
+                            }
+                        }
+                    },
+                    "Directives": null,
+                    "Position": {
+                        "Start": 223,
+                        "End": 228,
+                        "Line": 18,
+                        "Column": 3,
+                        "Src": {
+                            "Name": "graph/schema.graphqls",
+                            "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                            "BuiltIn": false
+                        }
+                    }
+                }
+            ],
+            "Types": null,
+            "EnumValues": null,
+            "Position": {
+                "Start": 196,
+                "End": 202,
+                "Line": 16,
+                "Column": 6,
+                "Src": {
+                    "Name": "graph/schema.graphqls",
+                    "Input": "# GraphQL schema example\n#\n# https://gqlgen.com/getting-started/\n\ntype User {\n  name: String!\n  age: Int!\n}\n\ntype Query {\n  users: [User!]!\n  user(name: String!): User\n  offices: [Office]\n}\n\ntype Office {\n  name: String!\n  floor: Int!\n}\n",
+                    "BuiltIn": false
+                }
+            },
+            "BuiltIn": false
+        },
+        "Selections": null
+    },
+    "Index": null,
+    "Result": null,
+    "IsMethod": false,
+    "IsResolver": false
+}

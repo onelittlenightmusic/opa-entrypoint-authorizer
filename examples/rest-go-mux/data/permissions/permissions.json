@@ -1,0 +1,20 @@
+{
+  "user_roles": {
+    "alice": ["admin", "namecheck"],
+    "bob": ["namecheck"]
+  },
+  "role_permissions": {
+    "namecheck":  [
+      {"resources": ["user"], "verbs": ["getname", "list"]}
+    ],
+    "admin": [
+      {"resources": ["user"]}
+    ]
+  },
+  "public_permissions": [
+    {"resources": ["office"]}
+  ],
+  "owner_permissions": [
+    {"resources": ["user"]}
+  ]
+}
