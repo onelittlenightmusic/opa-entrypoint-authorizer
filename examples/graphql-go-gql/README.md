@@ -8,7 +8,7 @@ go run server.go
 
 Access the following URL sing REST client.
 
-`http://localhost:8008`
+`http://localhost:8008/query`
 
 ## Test scenario
 
