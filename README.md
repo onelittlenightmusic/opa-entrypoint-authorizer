@@ -13,6 +13,10 @@ Authorization policies are written by OPA Rego language and a new policy can be 
   - GraphQL: gqlgen
   - REST: `http` and gorilla/mux
 
+The following tools are used in this plugin.
+- [@open-policy-agent/opa-wasm](https://github.com/open-policy-agent/npm-opa-wasm)(for JavaScript)
+- [OPA](https://github.com/open-policy-agent/opa)(for Golang)
+
 ## Usage
 
 - Create configuration as `permissions.json` (details in the next section)
