@@ -33,36 +33,41 @@ const entrypointSetting = {
 }
 
 // Configure authorization middleware
-const middleware = restExpressOPAAuthorizer('../../policy.wasm', {permissions, entrypointSetting})
 
-//Definition of REST API for Express
-app.get('/users', middleware, function (req, res) {
-  res.setHeader('Content-Type', 'application/json');
-  res.end( JSON.stringify(dataUsers.map((x)=>({name: x.name}))) );
-})
+const run = async  () => {
+  const middleware = await restExpressOPAAuthorizer('../../policy.wasm', {permissions, entrypointSetting})
 
-app.get('/users/:user_name', middleware, function (req, res) {
-  res.setHeader('Content-Type', 'application/json');
-  var user = dataUsers.find((x)=>(x.name==req.params.user_name));
-  res.end( JSON.stringify({name: user.name}));
-})
+  //Definition of REST API for Express
+  app.get('/users', middleware, function (req, res) {
+    res.setHeader('Content-Type', 'application/json');
+    res.end( JSON.stringify(dataUsers.map((x)=>({name: x.name}))) );
+  })
 
-app.get('/users/:user_name/age', middleware, function (req, res) {
-  res.setHeader('Content-Type', 'application/json');
-  var user = dataUsers.find((x)=>(x.name==req.params.user_name));
-  res.end( JSON.stringify({age: user.age}));
-})
+  app.get('/users/:user_name', middleware, function (req, res) {
+    res.setHeader('Content-Type', 'application/json');
+    var user = dataUsers.find((x)=>(x.name==req.params.user_name));
+    res.end( JSON.stringify({name: user.name}));
+  })
 
-app.get('/offices', middleware, function (req, res) {
-  res.setHeader('Content-Type', 'application/json');
-  res.end( JSON.stringify(dataOffices) );
-})
+  app.get('/users/:user_name/age', middleware, function (req, res) {
+    res.setHeader('Content-Type', 'application/json');
+    var user = dataUsers.find((x)=>(x.name==req.params.user_name));
+    res.end( JSON.stringify({age: user.age}));
+  })
 
-// Run Express service with authorization middleware
-var server = app.listen(8081, function () {
-    var host = server.address().address;
-    var port = server.address().port;
-    console.log("Example app listening at http://%s:%s", host, port);
-})
+  app.get('/offices', middleware, function (req, res) {
+    res.setHeader('Content-Type', 'application/json');
+    res.end( JSON.stringify(dataOffices) );
+  })
+
+  // Run Express service with authorization middleware
+  var server = app.listen(8081, function () {
+      var host = server.address().address;
+      var port = server.address().port;
+      console.log("Example app listening at http://%s:%s", host, port);
+  })
+}
+
+run();
 
 module.exports = app;

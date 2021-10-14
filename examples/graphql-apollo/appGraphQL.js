@@ -84,9 +84,12 @@ const entrypointSetting = {
 // Run GraphQL service with authorization middleware
 const schema = makeExecutableSchema({ typeDefs, resolvers })
 
-const server = new ApolloServer({
-  schema: applyMiddleware(schema, graphqlOPAAuthorizer('../../policy.wasm', {permissions, entrypointSetting})),
-  context: ({ req }) => ({ user: req.headers.authorization || '' }),
-})
+const run = async () => {
+  const server = new ApolloServer({
+    schema: applyMiddleware(schema, await graphqlOPAAuthorizer('../../policy.wasm', {permissions, entrypointSetting})),
+    context: ({ req }) => ({ user: req.headers.authorization || '' }),
+  })
 
-server.listen({ port: 8008 })
+  server.listen({ port: 8008 })
+}
+run();
