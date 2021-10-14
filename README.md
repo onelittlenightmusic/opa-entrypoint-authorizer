@@ -7,11 +7,11 @@ Authorization policies are written by OPA Rego language and a new policy can be 
 ## Supported framework
 
 - JavaScript (node.js)
-  - GraphQL: Apollo, Envelop (To be)
-  - REST: Express
+  - GraphQL: [Apollo server](https://github.com/apollographql/apollo-server), [Envelop](https://github.com/dotansimha/envelop)
+  - REST: [Express](https://github.com/expressjs/express)
 - Golang
-  - GraphQL: gqlgen
-  - REST: `http` and gorilla/mux
+  - GraphQL: [gqlgen](https://github.com/99designs/gqlgen)
+  - REST: `http` and [gorilla/mux](https://github.com/gorilla/mux)
 
 The following tools are used in this plugin.
 - [@open-policy-agent/opa-wasm](https://github.com/open-policy-agent/npm-opa-wasm)(for JavaScript)
@@ -32,7 +32,7 @@ The following tools are used in this plugin.
   app.get('/users', middleware, function (req, res) {...}
   ```
 
-## Configuration
+## Mandatory configuration
 
 Before starting this authorizer, we need the following configurations.
 
@@ -53,7 +53,7 @@ Before starting this authorizer, we need the following configurations.
 }
 ```
 
-## Examples
+## Examples for each supported servers
 
 ### (JavaScript) REST with Express
 
@@ -127,7 +127,19 @@ const server = new ApolloServer({
 })
 ```
 
+
 Please check [examples](https://github.com/onelittlenightmusic/opa-entrypoint-authorizer/tree/main/examples/graphql-apollo)
+
+### Envelop
+
+```js
+  let authorizer = await graphqlEnvelopOPAAuthorizer('../../policy.wasm', {permissions, entrypointSetting});
+  const getEnveloped = envelop({
+    plugins: [useOPAAuth(), useFilterAllowedOperations(authorizer) ],
+  });
+```
+
+Please check [examples](https://github.com/onelittlenightmusic/opa-entrypoint-authorizer/tree/main/examples/graphql-envelop)
 
 ### (Golang) REST with gorilla/mux
 

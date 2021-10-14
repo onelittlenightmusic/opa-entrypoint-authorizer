@@ -1,0 +1,24 @@
+{
+  "name": "@envelop-examples/simple-http",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Dotan Simha",
+  "license": "MIT",
+  "dependencies": {
+    "@envelop/core": "*",
+    "@envelop/generic-auth": "^1.0.1",
+    "@envelop/operation-field-permissions": "^1.0.8",
+    "@graphql-tools/schema": "8.0.1",
+    "graphql": "^15.6.1",
+    "opa-entrypoint-authorizer": "file:../../node-src"
+  },
+  "devDependencies": {
+    "@types/node": "15.6.1",
+    "ts-node": "10.0.0",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "start": "ts-node index.ts"
+  }
+}
